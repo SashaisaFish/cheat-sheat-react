@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+	color: var(--white-grey);
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--header-text);
+}
+p,
+a {
+	font-family: var(--main-text);
+}
+a {
+	text-decoration: none;
+}

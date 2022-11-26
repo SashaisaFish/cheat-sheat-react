@@ -1,0 +1,93 @@
+/* IMPORT FONTS */
+@import url("https://unpkg.com/modern-css-reset/dist/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+@import "./media-queries/phone.css" screen and (max-width: 1079px);
+@import "./media-queries/tablet.css" screen and (min-width: 481px) and
+	(max-width: 1023px);
+
+/* ROOT VARS */
+:root {
+	--black: #262427;
+	--dark-grey: #3f3840;
+	--mid-grey: #5e5363;
+	--light-grey: #918b9a;
+	--white-grey: #cac9d9;
+	--index-bg: #90143d;
+	--index-border: #4d0a20;
+	--index-mc: #d61d5b;
+	--html-bg: #973114;
+	--html-border: #5b1907;
+	--html-mc: #df4d25;
+	--css-bg: #8e6100;
+	--css-border: #442502;
+	--css-mc: #f8be1e;
+	--js-bg: #0c852d;
+	--js-border: #024513;
+	--js-mc: #22bd4b;
+	--react-bg: #261680;
+	--react-border: #0f063f;
+	--react-mc: #412ab5;
+	--create-bg: #701083;
+	--create-border: #32063b;
+	--create-mc: #8e17a5;
+	--red: #ce1852;
+	--green: #33e190;
+	--button-shine: 1px 2px 3px rgba(255, 255, 255, 40%) inset,
+		-3px -2px 4px rgba(0, 0, 0, 50%) inset;
+	--drop-shadow: 0 1px 4px rgba(0, 0, 0, 60%);
+	--text-shadow: 0 2px 5px rgba(0, 0, 0, 70%);
+	--block-shadow: 3px 2px var(--mid-grey);
+	--link-text-glow: 0 0px 5px var(--white-grey);
+	--link-box-glow: 0 0 4px var(--white-grey);
+	--main-text: "Comfortaa", Arial, Helvetica, sans-serif;
+	--header-text: "Limelight", Times, serif;
+	--font-size-normal: 2rem;
+	--font-size-small: 1rem;
+	--font-size-large: 3rem;
+}
+
+/* #ROOT */
+#root {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background-color: var(--dark-grey);
+	overflow: scroll;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	padding: 5px 0;
+	display: grid;
+	grid-template-columns: max-content 1fr 3fr;
+	text-align: center;
+	place-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	justify-self: right;
+	align-items: center;
+	grid-column: 3;
+	margin-right: 2em;
+}
+
+main {
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+
+footer {
+	text-align: center;
+	color: var(--mid-grey);
+}
