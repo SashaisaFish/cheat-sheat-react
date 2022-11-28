@@ -1,0 +1,11 @@
+@media screen and (max-width: 480px) and (orientation: portrait) {
+	nav {
+		display: block;
+		position: relative;
+		transform: translateY(40%);
+	}
+	header {
+		grid-template-rows: 12vh;
+		line-height: calc(var(--font-size-large) * 0.95);
+	}
+}

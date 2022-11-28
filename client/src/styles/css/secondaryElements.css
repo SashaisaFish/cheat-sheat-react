@@ -16,6 +16,9 @@ p,
 a {
 	font-family: var(--main-text);
 }
+p {
+	text-align: center;
+}
 a {
 	text-decoration: none;
 }

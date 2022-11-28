@@ -1,4 +1,7 @@
-@import './primaryElements.css';
-@import './secondaryElements.css';
-@import './classes.css';
-@import './specific.css';
+@import "./primaryElements.css";
+@import "./secondaryElements.css";
+@import "./classes.css";
+@import "./specific.css";
+@import "./media-queries/phone.css" screen and (max-width: 1079px);
+@import "./media-queries/tablet.css" screen and (min-width: 481px) and
+	(max-width: 1023px);
